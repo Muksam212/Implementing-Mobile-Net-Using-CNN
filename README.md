@@ -1,19 +1,25 @@
 # Implementing-Mobile-Net-Using-CNN
 
 ```
-MobileNet is a family of convolutional neural network (CNN) architectures designed for efficient and high-performance image classification, detection, and segmentation tasks on mobile and embedded devices. The key focus of MobileNet architectures is to reduce the computational cost and memory requirements while maintaining high accuracy. Here are some key aspects of MobileNet:
+MobileNet is a family of convolutional neural network (CNN) architectures designed for efficient and
+high-performance image classification, detection, and segmentation tasks on mobile and embedded devices.
+The key focus of MobileNet architectures is to reduce the computational cost and memory requirements while maintaining high accuracy. Here are some key aspects of MobileNet:
 
-1) Depthwise Separable Convolutions: MobileNet uses depthwise separable convolutions to reduce the number of parameters and computational complexity. This operation involves two steps.
+1) Depthwise Separable Convolutions: MobileNet uses depthwise separable convolutions to reduce the number of parameters and computational complexity.
+This operation involves two steps.
   a) Depthwise Convolution: Applies a single convolutional filter per input channel(depth).
   b) Pointwise Convolution: Uses 1x1 convolution to combine the outputs of the depthwise convolution, effectively reducing number of channels.
 
-2) Width Multiplier: This hyperparameter (denoted as '𝛼' allows the model to shrink uniformly at each layer, controlling the width of the network. Smaller values of  '𝛼' result in fewer parameters and less computation.
+2) Width Multiplier: This hyperparameter (denoted as '𝛼' allows the model to shrink uniformly at each layer, controlling the width of the network.
+Smaller values of  '𝛼' result in fewer parameters and less computation.
 
-3) Resolution Multiplier: Another hyperparameter (denoted as '𝜌') that controls the input image resolution. By reducing the input resolution, the computational cost is further decreased.
+3) Resolution Multiplier: Another hyperparameter (denoted as '𝜌') that controls the input image resolution.
+By reducing the input resolution, the computational cost is further decreased.
 
 4) MobileNetV1: The first version of MobileNet, introduced depthwise separable convolutions and demonstrated significant improvements in efficiency.
 
-5) MobileNetV2: Introduced inverted residuals and linear bottlenecks. This version further improved the efficiency and accuracy trade-offs by using shortcuts between layers to preserve information.
+5) MobileNetV2: Introduced inverted residuals and linear bottlenecks.
+This version further improved the efficiency and accuracy trade-offs by using shortcuts between layers to preserve information.
 
 6) MobileNetV3: Combined advancements from previous versions and included techniques like squeeze-and-excitation modules and network architecture search (NAS) to automate the design of the model architecture for even better performance.
 
